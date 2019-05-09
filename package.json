@@ -1,0 +1,13 @@
+{
+  "name": "stone-miner",
+  "version": "1.0.0",
+  "description": "This is a sample template for stone-miner - Below is a brief explanation of what we have generated for you:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sam package --s3-bucket stone-miner-deploy --output-template-file packaged.yaml",
+    "deploy": "sam deploy --template-file packaged.yaml --stack-name stone-miner --capabilities CAPABILITY_IAM --region ap-northeast-1"
+  },
+  "author": "Shalon Selphy",
+  "license": "MIT"
+}
