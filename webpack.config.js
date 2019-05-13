@@ -34,6 +34,8 @@ const entries = Object.values(cfn.Resources)
 
 console.log(`Building for ${conf.prodMode ? 'production' : 'development'}...`)
 
+const plugins = [
+];
 
 module.exports = {
   // http://codys.club/blog/2015/07/04/webpack-create-multiple-bundles-with-entry-points/#sec-3

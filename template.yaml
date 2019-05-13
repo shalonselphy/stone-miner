@@ -7,7 +7,7 @@ Description: >
   
 Globals:
   Function:
-    Timeout: 3
+    Timeout: 120
 
 Resources:
   DigCharacterCountFunction:
@@ -16,6 +16,7 @@ Resources:
       CodeUri: dist/
       Handler: app.digCharacterCount
       Runtime: nodejs8.10
+      Timeout: 600
       Events:
         DailySchedule:
           Type: Schedule
